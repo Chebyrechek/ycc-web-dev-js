@@ -28,6 +28,13 @@
 
   addbtn.addEventListener('click', addItem)
 
+    document.addEventListener('keyup', function(event) {
+  if (event.keyCode === 13) {
+    addItem ();
+  }
+});
+
+
   function addItem(data) {
     let input = document.getElementById('shooter')
     let list = document.getElementById('todo-list')
