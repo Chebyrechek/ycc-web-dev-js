@@ -1,34 +1,33 @@
+html,
 body {
-  text-align: center;
-  margin: 10;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 16px;
+  height: 100%;
 }
 
-.container {
-  width: 400px;
-  margin: auto;
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
 }
 
-/* Настраиваем внешний вид поля ввода*/
-.form-control {
-  display: inline-block;
-  margin: 20px auto;
-  border: 2px solid #eee;
-  padding: 10px 20px;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 16px;
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
 }
 
-/*Как будет выглядеть каждый элемент нашего списка*/
-.todo-item {
-  text-align: left;
-  padding: 10px;
-  cursor: default;
-  border-radius: 7px;
+.form-signin .form-floating:focus-within {
+  z-index: 2;
 }
 
-/*Что произойдёт, когда мы наведём курсор на любую задачу из списка*/
-.todo-item:hover {
-  background-color: lightblue;
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
